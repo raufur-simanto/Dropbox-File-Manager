@@ -4,8 +4,8 @@ import os
 class BaseConfig:
     "This class is for base configuration"
 
-    APP_KEY = os.getenv("DROPBOX_APP_KEY", "your app key")
-    APP_SECRET = os.getenv("DROPBOX_APP_SECRET", "your app secret")
+    APP_KEY = os.getenv("DROPBOX_APP_KEY", "app-key")
+    APP_SECRET = os.getenv("DROPBOX_APP_SECRET", "app-secret")
     REDIRECT_URI = os.getenv(
         "DROPBOX_REDIRECT_URI", "http://localhost:5000/auth/callback"
     )
