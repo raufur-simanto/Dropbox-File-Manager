@@ -5,8 +5,9 @@ from flask import Flask
 
 from project.config import config
 
+
 def create_app(config_name=None):
-    """ create a factory function """
+    """create a factory function"""
     if config_name is None:
         config_name = os.environ.get("FLASK_CONFIG", "development")
 
@@ -14,7 +15,6 @@ def create_app(config_name=None):
 
     with app.app_context():
         app.config.from_object(config[config_name])
-
 
         app.logger.setLevel(logging.INFO)
         from project.apis import api
