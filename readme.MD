@@ -43,6 +43,7 @@ dropbox File Manager
 │       └── files.py          # file related apis 
 │       └── profile.py        # profile apis
 │       └── folder.py         # folder apis
+│       └── decorator.py         
 │
 ├── manage.py                 # Main Flask application file
 ├── .flaskenv                 # flask environment file
@@ -58,7 +59,7 @@ dropbox File Manager
 
    ```bash
    git@github.com:raufur-simanto/Dropbox-File-Manager.git
-   cd Dropbox-File-Manager.git
+   cd Dropbox-File-Manager
    ```
 
 2. **Create and activate a virtual environment**:
