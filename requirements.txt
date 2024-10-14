@@ -3,3 +3,5 @@ requests
 flask-restx
 isort
 black
+gunicorn
+Flask-Cors
